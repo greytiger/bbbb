@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+        <link href="/css/yamm.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="/css/business-casual.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script>
+            /* <![CDATA[ */
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id))
+                    return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = '//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.10';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+            /* ]]> */
+        </script>
+
+        <div class="brand">
+            <a href="#"><img src="img/banner_logo.png" height="180"/></a>            
+        </div>
+        <div class="address-bar">
+            <span id="hotline">Hotline: 0988 177 838</span> 
+        </div>
+        <!--        <nav id="hotline" class="navbar navbar-default" style="background-color: #FBDCE7; margin: 10px 0;">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <p class="navbar-text" style="color: #c8307d; font-family: LittleDays; font-size: 30px;">Hotline: 0988 177 838</p>
+                                <p class="navbar-text" style="color: #c8307d; font-family: LittleDays; font-size: 25px;">Địa chỉ: Số 4A Ngõ Tràng Tiền - Hoàn Kiếm - Hà Nội</p>
+                                <form class="navbar-form navbar-right" role="search" style="border: none; margin-top: 23px;">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control"/>
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" type="button" style="background-color: #F6aCCC; border-color: #F6aCCC; color: #C8307D"><span class="glyphicon glyphicon-search"></span></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>-->
+        <!-- Navigation -->
+        <nav class="navbar yamm navbar-default" role="navigation" data-spy="affix" data-offset-top="220">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                    <a class="navbar-brand" href="index.html">Business Casual</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav" style="font-family: LittleDays; text-transform: none; font-size: 25px;">
+                        <li>
+                            <a href="index.html">Trang Chủ</a>
+                        </li>
+                        <li>
+                            <a href="about.html">Giới Thiệu</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Đặt Bánh</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Bảng Giá</a>
+                        </li>
+                        <li class="dropdown yamm-fw">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Firstname</th>
+                                                    <th>Lastname</th>
+                                                    <th>Email</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Default</td>
+                                                    <td>Defaultson</td>
+                                                    <td>def@somemail.com</td>
+                                                </tr>      
+                                                <tr class="success">
+                                                    <td>Success</td>
+                                                    <td>Doe</td>
+                                                    <td>john@example.com</td>
+                                                </tr>
+                                                <tr class="danger">
+                                                    <td>Danger</td>
+                                                    <td>Moe</td>
+                                                    <td>mary@example.com</td>
+                                                </tr>
+                                                <tr class="info">
+                                                    <td>Info</td>
+                                                    <td>Dooley</td>
+                                                    <td>july@example.com</td>
+                                                </tr>
+                                                <tr class="warning">
+                                                    <td>Warning</td>
+                                                    <td>Refs</td>
+                                                    <td>bo@example.com</td>
+                                                </tr>
+                                                <tr class="active">
+                                                    <td>Active</td>
+                                                    <td>Activeson</td>
+                                                    <td>act@example.com</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact.html">Liên Hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="box">
+                    <div class="col-lg-12 text-center">
+                        <div class="row">
+                            <div id="carousel-example-generic" class="carousel slide">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators hidden-xs">
+                                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="img-responsive img-full" src="img/slide-1.jpg" alt=""/>
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive img-full" src="img/slide-2.jpg" alt=""/>
+                                        </div>
+                                        <div class="item">
+                                            <img class="img-responsive img-full" src="img/slide-3.jpg" alt=""/>
+                                        </div>
+                                    </div>
+
+                                    <!-- Controls -->
+                                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                        <span class="icon-prev"></span>
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                        <span class="icon-next"></span>
+                                    </a>
+                                </div>
+<!--                            <div class="col-lg-3">
+                                <div class="fb-page" data-href="https://www.facebook.com/BanhBoBongBenh/" 
+                                     data-height="230" 
+                                     data-small-header="false" 
+                                     data-adapt-container-width="true" 
+                                     data-hide-cover="false" 
+                                     data-show-facepile="true">
+                                    <blockquote cite="https://www.facebook.com/BanhBoBongBenh/" 
+                                                class="fb-xfbml-parse-ignore">
+                                        <a href="https://www.facebook.com/BanhBoBongBenh/">.Bánh Bơ Bồng Bềnh.</a>
+                                    </blockquote>
+                                </div>
+                                <style>
+                                    @media screen and (max-width:767px) {                                        
+                                        .fb-page{
+                                            display: none;
+                                        }
+
+                                    }
+                                </style>
+                            </div>-->
+                        </div>
+                        <h2 class="brand-before">
+                            <small>Welcome to</small>
+                        </h2>
+                        <h1 class="brand-name">Business Casual</h1>
+                        <hr class="tagline-divider"/>
+                        <h2>
+                            <small>By
+                                <strong>Start Bootstrap</strong>
+                            </small>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="box">
+                    <div class="col-lg-12">
+                        <hr/>
+                        <h2 class="intro-text text-center">Build a website
+                            <strong>worth visiting</strong>
+                        </h2>
+                        <hr/>
+                        <img class="img-responsive img-border img-left" src="img/intro-pic.jpg" alt=""/>
+                        <hr class="visible-xs"/>
+                        <p>The boxes used in this template are nested inbetween a normal Bootstrap row and the start of your column layout. The boxes will be full-width boxes, so if you want to make them smaller then you will need to customize.</p>
+                        <p>A huge thanks to <a href="http://join.deathtothestockphoto.com/" target="_blank">Death to the Stock Photo</a> for allowing us to use the beautiful photos that make this template really come to life. When using this template, make sure your photos are decent. Also make sure that the file size on your photos is kept to a minumum to keep load times to a minimum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="box">
+                    <div class="col-lg-12">
+                        <hr/>
+                        <h2 class="intro-text text-center">Beautiful boxes
+                            <strong>to showcase your content</strong>
+                        </h2>
+                        <hr/>
+                        <p>Use as many boxes as you like, and put anything you want in them! They are great for just about anything, the sky's the limit!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p>Copyright &copy; Your Website 2014</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="/webjars/jquery/jquery.min.js"></script>
+        <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

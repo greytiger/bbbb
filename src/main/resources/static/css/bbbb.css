@@ -1,0 +1,80 @@
+/* Ma Mau
+ #BFDFEA
+ #FBDCE7
+ #F6ACCC
+ #C8307D
+ #86614D
+*/
+
+@font-face {
+    font-family:Saigonese;
+    src:url('../font/Saigonese.otf') format('opentype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:LittleDays;
+    src:url('../font/UVF Little Days.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+#header{
+    background-image: url(../img/bg.png);
+    text-align: center;
+    /*padding: 20px 0;*/
+}
+#header img{
+    transition: all .2s ease-in-out;
+}
+
+#header img:hover{
+    transform: scale(1.05);
+}
+
+#menu ul{
+    list-style: none;
+    /*background-color: #F6ACCC;*/
+    text-align: center;
+    padding: 0;
+    margin: 10px 0;
+}
+
+#menu ul li{
+    display: inline-block;
+    padding: 0 10px;
+    margin: 5px;
+}
+
+#menu ul li a{
+    color: #86614D;
+    text-decoration: none;
+    font-family: LittleDays;
+    font-size: 25px;    
+    /*font-weight: bold;*/
+}
+
+#toolbar{
+    background-color: #FBDCE7;
+    margin-top: 10px;
+}
+
+.hotline{
+    color:#C8307D;
+    font-weight: bold;
+    font-family: LittleDays;
+    font-size: 22px;  
+}
+
+.search{
+    display: inline-block;
+}
+
+div.item img{
+    min-width: 100%;
+}
